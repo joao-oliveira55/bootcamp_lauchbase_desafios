@@ -2,6 +2,7 @@ const nome = "Silvana";
 const sexo = "F";
 const idade = 68;
 const contribuicao = 30;
+var teste = 15;
 
 if(sexo.toUpperCase = "F"){
     if(contribuicao >= 30 && idade + contribuicao >= 85){
