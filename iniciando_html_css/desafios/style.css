@@ -1,0 +1,208 @@
+@import "https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap";
+
+/*== sobre ==*/
+:root{
+    --collor-rocket:#7159c1;
+    --collor-green:#50fa7b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #282a36;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+.cabecalho{
+    border-bottom: 1px solid #333;
+    background: rgb(24, 24, 34);
+        
+    text-align: center;
+    padding: 30px;
+}
+.links a{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 30px;
+}
+
+.links a:hover{
+    color: var(--collor-green);
+    transition: 700ms;
+}
+.corpo__pagina{
+    max-width: 800px;
+    text-align: center;
+    margin: 30px auto;
+}
+.content__top{
+    margin-bottom: 40px;
+}
+.title{
+   font-size: 50px;
+   font-weight: bold;
+}
+
+.corpo__pagina .content__top img{
+    border-radius: 200px;
+
+}
+
+.tecnologias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 150px;
+}
+.tecnologias ul{
+    text-align: left;
+    font-size: 18px;
+}
+.tecnologias p{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.links_footer a{
+    color: var(--collor-green);
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+
+.links_footer a:hover{
+    color: white;
+    transition: 700ms;
+}
+
+main{
+    background-image: url('img/card.3b7ad20d.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+
+/* == Conteudo == */
+
+.cursos{
+    width: 90vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+
+.curso{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0.5px solid black;
+    border-radius: 30px;
+    height: 70vh;
+    padding:40% 10px 10px 10px ;
+}
+.curso_starter:hover{
+    padding-top: 35%;
+    border: 3px solid #715BC1;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 700ms;
+}
+.curso_base:hover   {
+    padding-top: 35%;
+    border: 3px solid  #F79531;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 700ms;
+}
+.curso_stack:hover{
+    padding-top: 35%;
+    border: 3px solid  #6AD463;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.image__content{
+    margin-bottom: 20px;
+}
+.starter_color{
+    color: #715BC1;
+}
+.base_color{
+    color: #F79531;
+}
+.stack_color{
+    color: #6AD463;
+}
+.curso__content p{
+    font-size: 19px;
+}
+.curso__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+.curso__info p{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    padding: 5px;
+}
+
+/*== modal ==*/
+
+.modal_overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;  
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+  
+}
+
+.close_modal{
+    color: black;
+    position: absolute;
+    top: 2px;
+    right:10px;
+    cursor: pointer;
+}
+
+
+/*== modal active ==*/
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+iframe{
+    width: 100%;
+    height: 90%;
+    top: 5%;
+    position: absolute; ;
+}
